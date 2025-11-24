@@ -3037,3 +3037,551 @@ h6 { font-size: 1rem; font-weight: 500; }
 .car-detail-form-select {
   box-shadow: none;
 }
+
+/* ===========================================
+   COMPREHENSIVE RESPONSIVE DESIGN
+   =========================================== */
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .display-custom {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .display-custom {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Design for Search Widget */
+@media (max-width: 768px) {
+  .search-glass-card {
+    margin-top: -40px;
+    padding: 2rem 1.5rem;
+  }
+
+  .search-glass-card .row {
+    --bs-gutter-x: 1rem;
+  }
+
+  .search-glass-card .col-lg-3 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-glass-card {
+    margin-top: -20px;
+    padding: 1.5rem 1rem;
+  }
+
+  .search-glass-card .col-lg-3,
+  .search-glass-card .col-md-6 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsive Design for Bento Grid */
+@media (max-width: 768px) {
+  .bento-section {
+    padding: 3rem 0;
+  }
+
+  .bento-card-main {
+    padding: 2rem;
+  }
+
+  .bento-card-main h3 {
+    font-size: 1.75rem;
+  }
+
+  .bento-description-max-width {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .bento-card-main {
+    padding: 1.5rem;
+  }
+
+  .bento-card-main h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive Design for Car Terms Info */
+@media (max-width: 768px) {
+  .car-terms-info {
+    padding: 12px;
+  }
+
+  .car-terms-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .car-term-item {
+    justify-content: flex-start;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .car-terms-info {
+    margin-top: 12px;
+  }
+}
+
+/* Responsive Design for Testimonials */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 4rem 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .testimonial-card-modern {
+    padding: 1.5rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stat-number-modern {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials-section {
+    padding: 3rem 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .testimonial-author {
+    gap: 0.75rem;
+  }
+
+  .testimonial-avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial-author-name {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-author-role {
+    font-size: 0.75rem;
+  }
+}
+
+/* Responsive Design for Navigation */
+@media (max-width: 991px) {
+  .navbar-centered .nav-links-centered {
+    margin-right: 0;
+  }
+
+  .navbar-centered .navbar-toggler {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-centered {
+    padding: 1rem 0;
+  }
+
+  .brand-font {
+    font-size: 1.25rem;
+  }
+
+  .brand-logo {
+    height: 32px;
+    width: auto;
+  }
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer-premium {
+    padding-top: 3rem;
+  }
+
+  .footer-premium .row {
+    --bs-gutter-y: 2rem;
+  }
+
+  .social-link-size {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-link-size i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-premium .col-lg-4,
+  .footer-premium .col-lg-2,
+  .footer-premium .col-md-4 {
+    text-align: center;
+  }
+
+  .footer-premium .d-flex.gap-3 {
+    justify-content: center;
+  }
+}
+
+/* Responsive Design for Car Detail Page */
+@media (max-width: 991px) {
+  .detail-hero-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .car-detail-title {
+    font-size: 2rem;
+  }
+
+  .hero-car-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .car-detail-sticky {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-hero-section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .car-detail-title {
+    font-size: 1.75rem;
+  }
+
+  .car-detail-description {
+    max-width: 100%;
+  }
+
+  .car-detail-blob {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .detail-hero-section .row {
+    text-align: center;
+  }
+
+  .car-detail-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-car-image {
+    margin-top: 2rem;
+  }
+}
+
+/* Responsive Design for Armada Gallery */
+@media (max-width: 768px) {
+  .armada-hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .floating-car img {
+    width: 200px;
+  }
+
+  .filters-section .col-lg-2 {
+    margin-bottom: 1rem;
+  }
+
+  .cta-section .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-section .btn {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .floating-car {
+    display: none;
+  }
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+  .about-hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+  }
+
+  .about-hero .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .story-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .gallery-image-wrapper {
+    height: 200px;
+  }
+
+  .mission-content .lead {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero .hero-title {
+    font-size: 2rem;
+  }
+
+  .story-image {
+    height: 300px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card-modern,
+  .team-card-modern {
+    margin: 0 1rem;
+  }
+}
+
+/* Responsive Design for AI Chat Section */
+@media (max-width: 768px) {
+  .ai-nexus-section {
+    padding: 3rem 0;
+  }
+
+  .gemini-chat-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .gradient-text,
+  .sub-welcome {
+    font-size: 2.5rem;
+  }
+
+  .suggestion-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+
+  .suggestion-card {
+    padding: 0.75rem;
+  }
+
+  .suggestion-text {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gradient-text,
+  .sub-welcome {
+    font-size: 2rem;
+  }
+
+  .suggestion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gemini-input-box {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+
+  .btn-send-gemini {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* General Mobile Improvements */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .display-6 {
+    font-size: 1.75rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Improve touch targets */
+  button,
+  .btn,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better spacing for mobile */
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .py-4 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Fix text overflow */
+  .text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .hero-section {
+    background: #000;
+  }
+
+  .display-custom {
+    -webkit-text-fill-color: #fff;
+  }
+
+  .glass-nav {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #fff;
+  }
+
+  .search-glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .floating-cars,
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .footer-premium,
+  .btn,
+  .floating-action-btn {
+    display: none !important;
+  }
+
+  .hero-section {
+    background: white !important;
+    color: black !important;
+  }
+
+  .display-custom {
+    -webkit-text-fill-color: black !important;
+    background: none !important;
+  }
+}
