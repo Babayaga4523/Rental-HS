@@ -4,6 +4,17 @@ import { Container, Row, Col, Button, Badge, Card, Tabs, Tab, Form, InputGroup }
 import { motion } from 'framer-motion'
 import './App.css'
 
+// Import car images
+import avazaImage from './assets/Avanza (2).jpeg'
+import innovaRebornImage from './assets/innova reborn (2).jpeg'
+import zenixImage from './assets/Toyota Innova Zenix 2023 - Modèle monospace compact (1).jpeg'
+import fortunerImage from './assets/fortuner (2).jpeg'
+import alphardImage from './assets/Toyota Alphard 2022 Price Philippines & Official Promos.jpeg'
+import hiaceCommuterImage from './assets/haiace Commuter.jpeg'
+import premioImage from './assets/premio.jpeg'
+import weddingCarImage from './assets/wedding car mercy.jpeg'
+import mediumBusImage from './assets/medium bus.jpeg'
+
 // Extended car data with more details
 interface CarDetail {
   id: number;
@@ -23,7 +34,7 @@ const carDetails: Record<number, CarDetail> = {
   1: {
     id: 1,
     name: 'Toyota Avanza',
-    image: '/src/assets/Avanza (2).jpeg',
+    image: avazaImage,
     price: 'Rp 700.000',
     type: 'MPV Family',
     seats: '7 Kursi',
@@ -50,15 +61,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "121 Nm @ 4,200 rpm"
     },
     gallery: [
-      "/src/assets/Avanza (2).jpeg",
-      "/src/assets/Avanza (2).jpeg",
-      "/src/assets/Avanza (2).jpeg"
+      avazaImage,
+      avazaImage,
+      avazaImage
     ]
   },
   2: {
     id: 2,
     name: 'Toyota Inova Reborn',
-    image: '/src/assets/innova reborn (2).jpeg',
+    image: innovaRebornImage,
     price: 'Rp 850.000',
     type: 'MPV Premium',
     seats: '8 Kursi',
@@ -85,15 +96,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "183 Nm @ 4,000 rpm"
     },
     gallery: [
-      "/src/assets/innova reborn (2).jpeg",
-      "/src/assets/innova reborn (2).jpeg",
-      "/src/assets/innova reborn (2).jpeg"
+      innovaRebornImage,
+      innovaRebornImage,
+      innovaRebornImage
     ]
   },
   3: {
     id: 3,
     name: 'Wuling Zenix Hybrid',
-    image: '/src/assets/Toyota Innova Zenix 2023 - Modèle monospace compact (1).jpeg',
+    image: zenixImage,
     price: 'Rp 1.500.000',
     type: 'Hybrid',
     seats: '5 Kursi',
@@ -120,15 +131,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "250 Nm"
     },
     gallery: [
-      "/src/assets/Toyota Innova Zenix 2023 - Modèle monospace compact (1).jpeg",
-      "/src/assets/Toyota Innova Zenix 2023 - Modèle monospace compact (1).jpeg",
-      "/src/assets/Toyota Innova Zenix 2023 - Modèle monospace compact (1).jpeg"
+      zenixImage,
+      zenixImage,
+      zenixImage
     ]
   },
   4: {
     id: 4,
     name: 'Toyota Fortuner',
-    image: '/src/assets/fortuner (2).jpeg',
+    image: fortunerImage,
     price: 'Rp 1.700.000',
     type: 'SUV',
     seats: '7 Kursi',
@@ -155,15 +166,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "400 Nm @ 1,600 rpm"
     },
     gallery: [
-      "/src/assets/fortuner (2).jpeg",
-      "/src/assets/fortuner (2).jpeg",
-      "/src/assets/fortuner (2).jpeg"
+      fortunerImage,
+      fortunerImage,
+      fortunerImage
     ]
   },
   5: {
     id: 5,
     name: 'Toyota Alphard',
-    image: '/src/assets/Toyota Alphard 2022 Price Philippines & Official Promos.jpeg',
+    image: alphardImage,
     price: 'Rp 3.500.000',
     type: 'Luxury MPV',
     seats: '7 Kursi',
@@ -190,15 +201,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "340 Nm @ 4,700 rpm"
     },
     gallery: [
-      "/src/assets/Toyota Alphard 2022 Price Philippines & Official Promos.jpeg",
-      "/src/assets/Toyota Alphard 2022 Price Philippines & Official Promos.jpeg",
-      "/src/assets/Toyota Alphard 2022 Price Philippines & Official Promos.jpeg"
+      alphardImage,
+      alphardImage,
+      alphardImage
     ]
   },
   6: {
     id: 6,
     name: 'Toyota Hiace Commuter',
-    image: '/src/assets/haiace Commuter.jpeg',
+    image: hiaceCommuterImage,
     price: 'Rp 1.300.000',
     type: 'Van',
     seats: '15 Kursi',
@@ -225,15 +236,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "260 Nm @ 1,600 rpm"
     },
     gallery: [
-      "/src/assets/haiace Commuter.jpeg",
-      "/src/assets/haiace Commuter.jpeg",
-      "/src/assets/haiace Commuter.jpeg"
+      hiaceCommuterImage,
+      hiaceCommuterImage,
+      hiaceCommuterImage
     ]
   },
   7: {
     id: 7,
     name: 'Toyota Hiace Premio',
-    image: '/src/assets/premio.jpeg',
+    image: premioImage,
     price: 'Rp 1.500.000',
     type: 'Premium Van',
     seats: '12 Kursi',
@@ -260,15 +271,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "241 Nm @ 3,800 rpm"
     },
     gallery: [
-      "/src/assets/premio.jpeg",
-      "/src/assets/premio.jpeg",
-      "/src/assets/premio.jpeg"
+      premioImage,
+      premioImage,
+      premioImage
     ]
   },
   8: {
     id: 8,
     name: 'Mercedes-Benz Wedding Car',
-    image: '/src/assets/wedding car mercy.jpeg',
+    image: weddingCarImage,
     price: 'Rp 2.800.000',
     type: 'Luxury Sedan',
     seats: '4 Kursi',
@@ -295,15 +306,15 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "480 Nm @ 1,600 rpm"
     },
     gallery: [
-      "/src/assets/wedding car mercy.jpeg",
-      "/src/assets/wedding car mercy.jpeg",
-      "/src/assets/wedding car mercy.jpeg"
+      weddingCarImage,
+      weddingCarImage,
+      weddingCarImage
     ]
   },
   9: {
     id: 9,
     name: 'Medium Bus 30 Seat',
-    image: '/src/assets/medium bus.jpeg',
+    image: mediumBusImage,
     price: 'Rp 2.500.000',
     type: 'Bus',
     seats: '30 Kursi',
@@ -330,9 +341,9 @@ const carDetails: Record<number, CarDetail> = {
       maxTorque: "500 Nm @ 1,200 rpm"
     },
     gallery: [
-      "/src/assets/medium bus.jpeg",
-      "/src/assets/medium bus.jpeg",
-      "/src/assets/medium bus.jpeg"
+      mediumBusImage,
+      mediumBusImage,
+      mediumBusImage
     ]
   }
 }

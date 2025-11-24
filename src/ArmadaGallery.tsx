@@ -3,12 +3,22 @@ import { Container, Button, Form, InputGroup, Pagination, Badge, Spinner } from 
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { aiService } from './services/aiService'
-// (Data tetap sama, saya ringkas agar fokus ke UI)
+
+// Import car images
+import avazaImage from './assets/Avanza (2).jpeg'
+import innovaRebornImage from './assets/innova reborn (2).jpeg'
+import zenixImage from './assets/Toyota Innova Zenix 2023 - Modèle monospace compact (1).jpeg'
+import fortunerImage from './assets/fortuner (2).jpeg'
+import alphardImage from './assets/Toyota Alphard 2022 Price Philippines & Official Promos.jpeg'
+import hiaceCommuterImage from './assets/haiace Commuter.jpeg'
+import premioImage from './assets/premio.jpeg'
+import weddingCarImage from './assets/wedding car mercy.jpeg'
+import mediumBusImage from './assets/medium bus.jpeg'
 const cars = [
   {
     id: 1,
     name: 'Toyota Avanza',
-    image: '/src/assets/Avanza (2).jpeg',
+    image: avazaImage,
     price: 'Rp 700.000',
     type: 'MPV Family',
     seats: '7 Kursi',
@@ -22,7 +32,7 @@ const cars = [
   {
     id: 2,
     name: 'Toyota Inova Reborn',
-    image: '/src/assets/innova reborn (2).jpeg',
+    image: innovaRebornImage,
     price: 'Rp 850.000',
     type: 'MPV Premium',
     seats: '8 Kursi',
@@ -36,7 +46,7 @@ const cars = [
   {
     id: 3,
     name: 'Wuling Zenix Hybrid',
-    image: '/src/assets/Toyota Innova Zenix 2023 - Modèle monospace compact (1).jpeg',
+    image: zenixImage,
     price: 'Rp 1.500.000',
     type: 'Hybrid',
     seats: '5 Kursi',
@@ -50,7 +60,7 @@ const cars = [
   {
     id: 4,
     name: 'Toyota Fortuner',
-    image: '/src/assets/fortuner (2).jpeg',
+    image: fortunerImage,
     price: 'Rp 1.700.000',
     type: 'SUV',
     seats: '7 Kursi',
@@ -64,7 +74,7 @@ const cars = [
   {
     id: 5,
     name: 'Toyota Alphard',
-    image: '/src/assets/Toyota Alphard 2022 Price Philippines & Official Promos.jpeg',
+    image: alphardImage,
     price: 'Rp 3.500.000',
     type: 'Luxury MPV',
     seats: '7 Kursi',
@@ -78,7 +88,7 @@ const cars = [
   {
     id: 6,
     name: 'Toyota Hiace Commuter',
-    image: '/src/assets/haiace Commuter.jpeg',
+    image: hiaceCommuterImage,
     price: 'Rp 1.300.000',
     type: 'Van',
     seats: '15 Kursi',
@@ -92,7 +102,7 @@ const cars = [
     {
     id: 7,
     name: 'Toyota Hiace Premio',
-    image: '/src/assets/premio.jpeg',
+    image: premioImage,
     price: 'Rp 1.500.000',
     type: 'Van',
     seats: '12 Kursi',
@@ -106,7 +116,7 @@ const cars = [
    {
     id: 8,
     name: 'Mercedes-Benz Wedding Car',
-    image: '/src/assets/wedding car mercy.jpeg',
+    image: weddingCarImage,
     price: 'Rp 2.800.000',
     type: 'Luxury',
     seats: '4 Kursi',
@@ -120,7 +130,7 @@ const cars = [
    {
     id: 9,
     name: 'Medium Bus 30 Seat',
-    image: '/src/assets/medium bus.jpeg',
+    image: mediumBusImage,
     price: 'Rp 2.500.000',
     type: 'Bus',
     seats: '30 Kursi',
