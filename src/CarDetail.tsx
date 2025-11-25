@@ -103,13 +103,13 @@ const carDetails: Record<number, CarDetail> = {
   },
   3: {
     id: 3,
-    name: 'Wuling Zenix Hybrid',
+    name: 'Zenix Hybrid',
     image: zenixImage,
     price: 'Rp 1.500.000',
     type: 'Hybrid',
     seats: '5 Kursi',
     transmission: 'Automatic',
-    description: "Wuling Zenix Hybrid menggabungkan efisiensi bahan bakar dengan performa yang powerful. Teknologi hybrid terdepan untuk pengalaman berkendara yang ramah lingkungan.",
+    description: "Zenix Hybrid menggabungkan efisiensi bahan bakar dengan performa yang powerful. Teknologi hybrid terdepan untuk pengalaman berkendara yang ramah lingkungan.",
     features: [
       "Hybrid Technology",
       "Regenerative Braking",
