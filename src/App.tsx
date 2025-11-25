@@ -42,7 +42,7 @@ const cars = [
   },
   {
     id: 3,
-    name: 'Wuling Zenix Hybrid',
+    name: 'Zenix Hybrid',
     image: zenixImg,
     price: 'Rp 1.500.000',
     type: 'Hybrid',
